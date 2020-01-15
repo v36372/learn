@@ -71,4 +71,14 @@ More or less like description
 
 Used for isolating resources between non-overlapping groups
 
+# chapter 4
+# Replications and other controllers: deploying managed pods
+
+In the real world, after you create pods, you'd want to make sure their heath is ok and make some actions when needed. To do this, you never create pods directly, but rely on other types of resources, such as Replication-Controllers or Deployments, which then create and manage actual pods.
+
+When you created unmanaged pods containing some containers, Kubernetes will monitor the containers and automatically restart them if needed. But if the whole node fails, all the pods are lost and will not be replaced with new ones unless these pods are managed by the ReplicationController
+
+
+
+
 
